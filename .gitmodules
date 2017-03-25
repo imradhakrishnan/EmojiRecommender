@@ -1,0 +1,6 @@
+[submodule "twitter-emojis"]
+	path = twitter-emojis
+	url = https://github.com/micnews/twitter-emojis
+[submodule "Tweet2Vec"]
+	path = Tweet2Vec
+	url = https://github.com/soroushv/Tweet2Vec
