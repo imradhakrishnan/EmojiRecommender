@@ -4,3 +4,6 @@
 [submodule "Tweet2Vec"]
 	path = Tweet2Vec
 	url = https://github.com/soroushv/Tweet2Vec
+[submodule "tweet2vec"]
+	path = tweet2vec
+	url = https://github.com/bdhingra/tweet2vec.git
