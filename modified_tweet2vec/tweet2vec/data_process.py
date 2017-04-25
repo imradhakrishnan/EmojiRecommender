@@ -1,6 +1,8 @@
 import csv
 import re
-with open('input.csv', 'rU') as csvfile:
+infile = sys.argv[1]
+outfile = sys.argv[2]
+with open(infile, 'rU') as csvfile:
   data = csv.reader(csvfile, delimiter=',', quotechar="|")
   processed_data =[]
   just_tweets = []
@@ -24,6 +26,6 @@ with open('input.csv', 'rU') as csvfile:
             if(len(row) == 3):
                 processed_data.append(row)
 
-with open('preprocessed_tweet_1.csv', 'w') as csvfile:
+with open(outfile, 'w') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerows(processed_data)

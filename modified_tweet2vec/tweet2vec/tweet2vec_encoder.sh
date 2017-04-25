@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # specify data file here
-datafile="../data/preprocessed_tweet_2"
+datafile="../data/test_preprocessed_tweet_2.csv"
 
 # specify model path here
 modelpath="best_model/"
