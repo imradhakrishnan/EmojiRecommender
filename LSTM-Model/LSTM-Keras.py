@@ -1,4 +1,6 @@
-# LSTM for emoji recommendation for tweets
+# LSTM model for emoji recommendation for tweets
+# Written by: Radha Krishnan Vinayagam
+
 import numpy
 from keras.layers import Dense, LSTM
 from keras.layers.embeddings import Embedding
