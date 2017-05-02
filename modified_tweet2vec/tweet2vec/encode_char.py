@@ -7,7 +7,7 @@ import batch_char as batch
 import cPickle as pkl
 import io
 import csv
-
+import os
 from t2v import tweet2vec, init_params, load_params
 from settings_char import N_BATCH, MAX_LENGTH, MAX_CLASSES
 
@@ -26,7 +26,6 @@ def classify(tweet, t_mask, params, n_classes, n_chars):
     return lasagne.layers.get_output(l_dense), lasagne.layers.get_output(emb_layer)
 
 def main(args):
-
     data_path = args[0]
     model_path = args[1]
     save_path = args[2]
@@ -92,6 +91,9 @@ def main(args):
 
     # Save
     print("Saving...")
+    ###Author - jagathshree
+    if not os.path.exists(save_path):
+        os.makedirs(save_path)
     with io.open('%s/predicted_tags.txt'%save_path,'w') as f:
         for item in out_pred:
             f.write(item + '\n')

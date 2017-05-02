@@ -1,0 +1,16 @@
+EmojiRecommender package implements two models for recommending emojis for an incoming tweet.
+The first one is the average model and another is the LSTM model
+
+Average Model:
+1. Please follow the instructions in (https://github.com/bdhingra/tweet2vec) to set up the environment for modified_tweet2vec
+2. Sample input file is in modified_tweet2vec/data/input.csv
+3. Run average_main.py in the parent directory within "EmojiRecommender"
+4. This will run the preprocessing, tweet2vec encoding, emoji embeddings, cross validation,
+  recommendations and prints accuracy for each fold of cross validation
+5. The output files for each fold of cross validation are saved in modified_tweet2vec/data/RecommendEmojis1.csv, modified_tweet2vec/data/RecommendEmojis2.csv, etc
+
+LSTM Model:
+1. Install Keros and tensor flow backend
+2. Run the shell script preprocessing.sh in the parent directory.
+3. This will output a preprocessed file input_preprocessed_2.csv in modified_tweet2vec/data/
+4. Use this as the input for LSTM.py inside LSTM model directory

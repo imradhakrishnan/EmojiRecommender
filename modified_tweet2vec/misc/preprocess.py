@@ -65,5 +65,5 @@ with io.open(outfile, 'w') as tweet_processed_text, io.open(infile, 'r') as fin:
         line[0] = preprocess(line[0].rstrip())
         ###Do not append rows with empty tweets
         if line[0] != '':
-            print(line[0])
+            # print(line[0])
             tweet_processed_text.write(unicode(','.join(line))+'\n')

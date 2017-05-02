@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # specify data file here
-datafile="../data/test_preprocessed_tweet_2.csv"
+datafile="/home/jagathshree/Documents/files/Spring2017/DBMS/EmojiRecommender/modified_tweet2vec/data/sample_test_preprocessed_tweet_2.csv"
 
 # specify model path here
 modelpath="best_model/"
